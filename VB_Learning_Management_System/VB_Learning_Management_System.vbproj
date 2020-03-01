@@ -73,23 +73,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin-dashboard.Designer.vb">
+    <Compile Include="Forms\Admin\admin-dashboard.Designer.vb">
       <DependentUpon>admin-dashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="admin-dashboard.vb">
+    <Compile Include="Forms\Admin\admin-dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="admin-login.Designer.vb">
+    <Compile Include="Forms\Admin\admin-login.Designer.vb">
       <DependentUpon>admin-login.vb</DependentUpon>
     </Compile>
-    <Compile Include="admin-login.vb">
+    <Compile Include="Forms\Admin\admin-login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection\SQlLServerConnection.vb" />
-    <Compile Include="selection.vb">
+    <Compile Include="Forms\Admin\Student-List.Designer.vb">
+      <DependentUpon>Student-List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\Student-List.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="selection.Designer.vb">
+    <Compile Include="Forms\selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\selection.Designer.vb">
       <DependentUpon>selection.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -108,27 +113,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="student-dashboard.Designer.vb">
+    <Compile Include="Forms\Student\student-dashboard.Designer.vb">
       <DependentUpon>student-dashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="student-dashboard.vb">
+    <Compile Include="Forms\Student\student-dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="student-login.Designer.vb">
+    <Compile Include="Forms\Student\student-login.Designer.vb">
       <DependentUpon>student-login.vb</DependentUpon>
     </Compile>
-    <Compile Include="student-login.vb">
+    <Compile Include="Forms\Student\student-login.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_uhd_databaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_uhd_databaseDataSet1.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="admin-dashboard.resx">
+    <EmbeddedResource Include="Forms\Admin\admin-dashboard.resx">
       <DependentUpon>admin-dashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin-login.resx">
+    <EmbeddedResource Include="Forms\Admin\admin-login.resx">
       <DependentUpon>admin-login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="selection.resx">
+    <EmbeddedResource Include="Forms\Admin\Student-List.resx">
+      <DependentUpon>Student-List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\selection.resx">
       <DependentUpon>selection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -137,10 +150,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="student-dashboard.resx">
+    <EmbeddedResource Include="Forms\Student\student-dashboard.resx">
       <DependentUpon>student-dashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="student-login.resx">
+    <EmbeddedResource Include="Forms\Student\student-login.resx">
       <DependentUpon>student-login.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -155,6 +168,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="_uhd_databaseDataSet1.xsc">
+      <DependentUpon>_uhd_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_uhd_databaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_uhd_databaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_uhd_databaseDataSet1.xss">
+      <DependentUpon>_uhd_databaseDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="uhd-database.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

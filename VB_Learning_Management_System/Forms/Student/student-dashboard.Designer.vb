@@ -24,6 +24,7 @@ Partial Class student_dashboard
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Sbackbtn = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,11 +49,21 @@ Partial Class student_dashboard
         Me.Sbackbtn.Text = "Logout"
         Me.Sbackbtn.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(99, 199)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(82, 29)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Grades"
+        '
         'student_dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 28.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(882, 553)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Sbackbtn)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Calibri", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -67,4 +78,5 @@ Partial Class student_dashboard
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Sbackbtn As Button
+    Friend WithEvents Label2 As Label
 End Class

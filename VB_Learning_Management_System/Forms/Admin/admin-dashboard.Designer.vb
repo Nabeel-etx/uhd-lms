@@ -2,7 +2,7 @@
 Partial Class admin_home
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
+    'Form overrides dispose to clean up the component list  safdsgfsgfehehrerb.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try

@@ -15,4 +15,8 @@
     Private Sub StudentDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
+
+    Private Sub StudentDataGridView_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles StudentDataGridView.CellContentClick
+
+    End Sub
 End Class

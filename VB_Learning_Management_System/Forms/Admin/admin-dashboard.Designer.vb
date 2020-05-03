@@ -76,7 +76,7 @@ Partial Class admin_home
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(209, 57)
         Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Assignments"
+        Me.Button3.Text = "Inbox"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -86,7 +86,7 @@ Partial Class admin_home
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(209, 57)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Grades"
+        Me.Button2.Text = "Calendar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -96,7 +96,7 @@ Partial Class admin_home
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(209, 57)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Courses"
+        Me.Button1.Text = "Students"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
@@ -116,7 +116,7 @@ Partial Class admin_home
         Me.StdntListbtn.Name = "StdntListbtn"
         Me.StdntListbtn.Size = New System.Drawing.Size(209, 57)
         Me.StdntListbtn.TabIndex = 0
-        Me.StdntListbtn.Text = "Students"
+        Me.StdntListbtn.Text = "Classes"
         Me.StdntListbtn.UseVisualStyleBackColor = True
         '
         'AdminDesktop

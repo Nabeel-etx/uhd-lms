@@ -130,6 +130,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_uhd_databaseDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_uhd_databaseDataSet1.vb">
+      <DependentUpon>_uhd_databaseDataSet1.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\Admin\admin-dashboard.resx">
